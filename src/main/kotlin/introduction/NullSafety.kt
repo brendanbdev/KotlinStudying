@@ -35,4 +35,20 @@ fun main() {
 
     // 9. When calling the function with a 'String?' (nullable) argument, a compilation error is produced.
     // strLength(nullable)
+
+//----------------------------------------------------------------------------------------------------
+//  WORKING WITH NULLS - Sometimes Kotlin programs need to work with null values, such as when
+//  interacting with external Java code or representing a truly absent state. Kotlin provides null
+//  tracking to elegantly deal with such situations.
+
+    // 1. A function that takes in a nullable string and returns its description.
+    fun describeString(maybeString: String?): String {
+        // 2. If the given string is not null and not empty, return information about its length.
+        if (maybeString != null && maybeString.length > 0) {
+            return "String of length ${maybeString.length}"
+        } else {
+            // 3. Otherwise, tell the caller that the string is empty or null.
+            return "Empty or null string"
+        }
+    }
 }
