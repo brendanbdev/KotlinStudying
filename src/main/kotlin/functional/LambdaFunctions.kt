@@ -6,7 +6,7 @@ fun main() {
 //  Lambdas can be denoted very concisely in many cases thanks to type inference and the implicit
 //  'it' variable.
 
-    // All examples create a function object that performs upper-casing.
+    // All examples create a function object that performs upper-casting.
     // So it's a function from String to String
 
     // 1. A lambda in all its glory, with explicit types everywhere. The lambda is the part in curly
